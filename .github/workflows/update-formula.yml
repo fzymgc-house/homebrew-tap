@@ -1,0 +1,55 @@
+name: Update Formula
+
+on:
+  repository_dispatch:
+    types: [update-formula]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout tap
+        uses: actions/checkout@v4
+
+      - name: Download formula from release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.event.client_payload.repo }}
+          TAG: ${{ github.event.client_payload.tag }}
+          FORMULA: ${{ github.event.client_payload.formula }}
+        run: |
+          echo "Updating $FORMULA from $REPO@$TAG"
+
+          gh release download "$TAG" \
+            --repo "$REPO" \
+            --pattern "$FORMULA" \
+            --output "Formula/$FORMULA" \
+            --clobber
+
+      - name: Commit and push
+        env:
+          REPO: ${{ github.event.client_payload.repo }}
+          TAG: ${{ github.event.client_payload.tag }}
+          FORMULA: ${{ github.event.client_payload.formula }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add "Formula/$FORMULA"
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          FORMULA_NAME="${FORMULA%.rb}"
+          git commit -m "feat(formula): update $FORMULA_NAME to $TAG
+
+          Source: $REPO
+
+          Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+
+          git push
