@@ -1,25 +1,25 @@
 class RouterHosts < Formula
   desc "Rust CLI tool for managing DNS host entries on routers via gRPC"
   homepage "https://github.com/fzymgc-house/router-hosts"
-  version "0.6.0"
+  version "0.7.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.6.0/router-hosts-aarch64-apple-darwin.tar.xz"
-      sha256 "d6d52cb32d71bce810151c89cc7b864e0a31e0e3bab4c9cec89090e8055e5e88"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.7.0/router-hosts-aarch64-apple-darwin.tar.xz"
+      sha256 "77b10feda9782c49927a5da07068fe4b9b4a776344304c85446b0a7033c6c7c7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.6.0/router-hosts-x86_64-apple-darwin.tar.xz"
-      sha256 "21456ba853e2cede2c498f6d0d89ca28a166a1e6ce686db9fae25af22cb66a56"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.7.0/router-hosts-x86_64-apple-darwin.tar.xz"
+      sha256 "442e38706b47be11e714d5972cc56f3b34146390d17dc073c6c11904a0b1d63b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.6.0/router-hosts-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a556bb4496e7bdafb99f7a89cc3893f096b1a21029e8ed480b15360d88a61231"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.7.0/router-hosts-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "3c022a7da015797c95d4b5b0771fd8e99e43ea59e214a9e092349f2796c615c4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.6.0/router-hosts-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7b14a9bb5870fb0cf584b6ee5f10949642bf22851c6562bfb5ebaad6583a5482"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.7.0/router-hosts-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b3bd250a89e05ebdbaa1e7eb03939eaff815058de796133172fdf93b1f489da6"
     end
   end
   license "MIT"
