@@ -1,25 +1,25 @@
 class RouterHostsOperator < Formula
   desc "Kubernetes operator for syncing Ingress hostnames to router-hosts"
   homepage "https://github.com/fzymgc-house/router-hosts"
-  version "0.8.0"
+  version "0.8.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.0/router-hosts-operator-aarch64-apple-darwin.tar.xz"
-      sha256 "ee4d8f4ae76673bb4a91ea28da4ec7ff2852049005fc6fd09f5efaff6e1894b8"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.6/router-hosts-operator-aarch64-apple-darwin.tar.xz"
+      sha256 "0971f0702efd2b1bdb2fa07fda04fac4297ae25e7e2ae3ae498323bcce743e44"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.0/router-hosts-operator-x86_64-apple-darwin.tar.xz"
-      sha256 "c534e896edbba88cb4f3d03e6b62b562d4f65977abe431dad4b6cea28a0df920"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.6/router-hosts-operator-x86_64-apple-darwin.tar.xz"
+      sha256 "2f43a543ce2376829b26ed01f03b8bcd9270f34fb9b014664dfbe1ddfb08322b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.0/router-hosts-operator-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c15331406213c82f20f43a66a618c7a0f4ae15698c001f3588279c6d580dc5be"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.6/router-hosts-operator-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "da5e374bd45b3958bdec68cd104e70ca6f78a26da52062f95e2755b94e2bd197"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.0/router-hosts-operator-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9249efb27fada6f222e5c4e01477d0deeac305f0f585ab107dbf08544893bc63"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.6/router-hosts-operator-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c3a06639ded10a4a4253030da1d633fae81133f6bb2dbdc4681b3d0c6485be2f"
     end
   end
   license "MIT"
