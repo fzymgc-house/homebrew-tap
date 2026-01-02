@@ -1,25 +1,25 @@
 class RouterHostsOperator < Formula
   desc "Kubernetes operator for syncing Ingress hostnames to router-hosts"
   homepage "https://github.com/fzymgc-house/router-hosts"
-  version "0.8.10"
+  version "0.8.11"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.10/router-hosts-operator-aarch64-apple-darwin.tar.xz"
-      sha256 "6b13fb7deb0563a1becfb23539c37867ba9270a5881b127cc6f380c0b0d68393"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.11/router-hosts-operator-aarch64-apple-darwin.tar.xz"
+      sha256 "9904a66711eb0bd058196e83aaf4c56400db7101013887967c355e04573f835d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.10/router-hosts-operator-x86_64-apple-darwin.tar.xz"
-      sha256 "447ec37f71344f651ce9c954a49347ae4627fbb954d29a3e588bafd1dab776e9"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.11/router-hosts-operator-x86_64-apple-darwin.tar.xz"
+      sha256 "18dec28ee7e4c75bbdcfa2a8cea71d968d34d4a81231fc51ad162daa6a099723"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.10/router-hosts-operator-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "95ca59aba751cc0e524765c50cd899789b8986a1ae6ba040a53e8161685448c8"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.11/router-hosts-operator-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9ea4ada153218fad47ccc32ee179410efb93ba63cf75cf95455a038473e9c8f2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.10/router-hosts-operator-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "34415788f306f529c1eca62246464b481d645091f84ca1be348b7e4db3a29827"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.11/router-hosts-operator-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "40237b071651b7816bffb6e73fdb9fcac0d3f0fb9bb59d632b4ff9f2e2bdc93f"
     end
   end
   license "MIT"
