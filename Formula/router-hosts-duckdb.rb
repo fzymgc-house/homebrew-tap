@@ -1,25 +1,25 @@
 class RouterHostsDuckdb < Formula
   desc "DuckDB variant of router-hosts - DNS host entry manager with DuckDB storage"
   homepage "https://github.com/fzymgc-house/router-hosts"
-  version "0.8.11"
+  version "0.8.12"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.11/router-hosts-duckdb-aarch64-apple-darwin.tar.xz"
-      sha256 "40da5a281d4f432c967acfe6f53962f9e3ab3235d3b1a9a7ede62c26595eaf82"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.12/router-hosts-duckdb-aarch64-apple-darwin.tar.xz"
+      sha256 "1de432b0d336b224fb427e98a73780fc3276f18a6566b79c0d3400e6bd369649"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.11/router-hosts-duckdb-x86_64-apple-darwin.tar.xz"
-      sha256 "c63c45eb1de53098661a57343db9c45e93ae33b07fe4f906462a4944c5645a50"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.12/router-hosts-duckdb-x86_64-apple-darwin.tar.xz"
+      sha256 "746dd5f5c9cb77afb2ead0b873be070b9cb394692240f256fc476f10a78b0f3a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.11/router-hosts-duckdb-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c433f9bd1e7adffcc97c79bc42c3e5bae4e6c0efd28e6b5a30e862304715d3c1"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.12/router-hosts-duckdb-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4a5b57e00d3c9172fc718bdd8641f46ab291bfabe3815c8867b772e3f8c1ec49"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.11/router-hosts-duckdb-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a3d0d725e1d06c82046b7e39dab6c6c0d0f3ed2630c8c0b933a7f8d73c0aa046"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.12/router-hosts-duckdb-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "1ff9763e5c92dfe37f98465235c75e3c264a56c883b609827343bc83c122d64d"
     end
   end
   license "MIT"
