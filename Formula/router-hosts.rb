@@ -1,25 +1,25 @@
 class RouterHosts < Formula
   desc "Rust CLI tool for managing DNS host entries on routers via gRPC"
   homepage "https://github.com/fzymgc-house/router-hosts"
-  version "0.8.11"
+  version "0.8.12"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.11/router-hosts-aarch64-apple-darwin.tar.xz"
-      sha256 "556e735778af1e40d7c15f9db7b4e9b628c719edffe5d2f999e399beb3279ad5"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.12/router-hosts-aarch64-apple-darwin.tar.xz"
+      sha256 "7591099541a9835efbcaa261d07bf35a1313411d59d49163c4cf71b91a01443d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.11/router-hosts-x86_64-apple-darwin.tar.xz"
-      sha256 "0596c798a869f6345ad45ff3d7cae315ff5e5e9b06cd09b1a3407a9c2976d379"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.12/router-hosts-x86_64-apple-darwin.tar.xz"
+      sha256 "dfe84bffe3f0b56f5ec8c67fe42cfa316668206eb1f6b4301e562b2de862d1be"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.11/router-hosts-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e58fc82943cf94b0345d4a63f10d815dcfd1edf55b4066b2dfe237015e9fd865"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.12/router-hosts-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f94475ed02c00d48671728c118bda922ed6cf32e7638c9d66deeda04cd1fb4f2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.11/router-hosts-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "091b3af6d5e2471993b4a5b8c108bb3843038924b0fa66ed271401b6c5b2227f"
+      url "https://github.com/fzymgc-house/router-hosts/releases/download/v0.8.12/router-hosts-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f2ab99717b8b865874ef8395b56b597c075ce9618f03e4032e8bd0fe32e51c8c"
     end
   end
   license "MIT"
