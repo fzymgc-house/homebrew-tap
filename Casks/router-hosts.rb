@@ -3,7 +3,7 @@ cask "router-hosts" do
   name "router-hosts"
   desc "CLI for managing DNS host entries via gRPC over mTLS"
   homepage "https://github.com/fzymgc-house/router-hosts"
-  version "0.9.3"
+  version "0.9.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "router-hosts" do
   on_macos do
     on_intel do
       url "https://github.com/fzymgc-house/router-hosts/releases/download/v#{version}/router-hosts_darwin_amd64.tar.gz"
-      sha256 "944975443eeec764f4ded5d449cc646156d19bc1657cfa1dbcf5b27986272679"
+      sha256 "2e00287cf8d2a54bccf88b2096035e76cec4d61f37eca4be90f152b2b75d4f14"
     end
     on_arm do
       url "https://github.com/fzymgc-house/router-hosts/releases/download/v#{version}/router-hosts_darwin_arm64.tar.gz"
-      sha256 "379e120b2eb34b80005f071385dc7e8a72b09a0679bcd2240ca7815df1fb27eb"
+      sha256 "a5069307088ddf17e48cb1a0eaceae8af644456b06a4a49b32efe45eba5a4db9"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/fzymgc-house/router-hosts/releases/download/v#{version}/router-hosts_linux_amd64.tar.gz"
-      sha256 "8b96380eda354af6bfec9785a317ca273af9bf433de800b7352c2f50fab6eb8f"
+      sha256 "4c829fe9812520243a842728d73b150472c6c8e35d7b9659204cf5496d72b28b"
     end
     on_arm do
       url "https://github.com/fzymgc-house/router-hosts/releases/download/v#{version}/router-hosts_linux_arm64.tar.gz"
-      sha256 "4ce96162059348ff661c80945c741d7b31b00d002368f4de2dd62a6e3f8ff952"
+      sha256 "d414487d8a2664d62a130ec71b8ee2b84ecee12c34073642fb02b49944384aea"
     end
   end
 
